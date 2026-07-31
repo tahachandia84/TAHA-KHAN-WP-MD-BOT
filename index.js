@@ -18,7 +18,7 @@ const express = require('express');
 
 const config = require('./config');
 const db = require('./lib/db');
-const { ctx, runtime } = require('./lib/functions');
+const { ctx, runtime } = require('./lib/function');
 
 const logger = pino({ level: 'silent' });
 const msgRetryCounterCache = new NodeCache();
